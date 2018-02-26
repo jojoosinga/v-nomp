@@ -1,0 +1,95 @@
+{
+    "enabled": true,
+    "coin": "verium.json",
+
+    "address": "n4jSe18kZMCdGcZqaYprShXW6EH1wivUK1",
+	
+	"rewardRecipients": {
+        "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5,
+        "22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 70,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 33987,
+            "user": "testuser",
+            "password": "testpass"
+        }
+    },
+
+	"ports": {
+        "3332": {
+            "diff": 0.005,
+            "varDiff": {
+              "minDiff": 0.0007,
+              "maxDiff": 0.03,
+              "targetTime": 90,
+              "retargetTime": 120,
+              "variancePercent": 30
+            
+            }
+        },
+        "3333": {
+            "diff": 0.03,
+            "varDiff": {
+                "minDiff": 0.03,
+                "maxDiff": 0.1,
+                "targetTime": 90,
+                "retargetTime": 120,
+                "variancePercent": 30
+            }
+        },
+        "3334": {
+            "diff": 0.1,
+            "varDiff": {
+                "minDiff": 0.1,
+                "maxDiff": 0.3,
+                "targetTime": 90,
+                "retargetTime": 120,
+                "variancePercent": 30
+            }
+        },
+		"3335": {
+            "diff": 0.03
+        },
+		"3336": {
+            "diff": 0.1
+        },
+		"3337": {
+            "diff": 0.25
+        },
+		
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 33987,
+            "user": "rpcuser",
+            "password": "rpcpasswd"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 33987,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "dbuser",
+        "password": "dbpasswd",
+        "database": "dbname",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}

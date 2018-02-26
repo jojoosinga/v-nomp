@@ -123,8 +123,8 @@ Usage
 
 
 #### Requirements
-* Coin daemon(s) (find the coin's repo and build latest version from source)
-* [Node.js](http://nodejs.org/) v0.10+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
+* [Verium Wallet](https://portal.vericoin.info/) v1.1+ ([follow these installation instructions](https://github.com/VeriumReserve/verium)
+* [Node.js](http://nodejs.org/) v9.5 ([follow these installation instructions](https://github.com/creationix/nvm#install-script)
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
 
 ##### Seriously
@@ -159,7 +159,7 @@ a good pool operator. For starters be sure to read:
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/zone117x/node-open-mining-portal.git nomp
+git clone https://github.com/phiten/vrm-nomp nomp
 cd nomp
 npm update
 ```

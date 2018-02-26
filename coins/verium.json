@@ -2,9 +2,7 @@
     "name": "Verium",
     "symbol": "VRM",
     "algorithm": "scrypt-n",
-    "reward": "POS",
-    "peerMagic": "70352205",
-    "peerMagicTestnet": "cdf2c0ef",
+    "reward":"POS",
     "timeTable": {
       "1048576": 100
     }

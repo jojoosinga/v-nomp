@@ -1,7 +1,7 @@
 {
-    "name": "node-open-mining-portal",
+    "name": "v-nomp",
     "version": "0.0.4",
-    "description": "An extremely efficient, highly scalable, all-in-one, easy to setup cryptocurrency mining pool",
+    "description": "An extremely efficient, highly scalable, all-in-one, easy to setup Verium mining pool",
     "keywords": [
         "stratum",
         "mining",
@@ -9,12 +9,12 @@
         "server",
         "poolserver",
         "bitcoin",
-        "litecoin",
-        "scrypt"
+        "verium",
+        "scryptn"
     ],
-    "homepage": "https://github.com/zone117x/node-open-mining-portal",
+    "homepage": "https://github.com/phiten/v-nomp",
     "bugs": {
-        "url": "https://github.com/zone117x/node-open-mining-portal/issues"
+        "url": "https://github.com/phiten/v-nomp/issues"
     },
     "license": "GPL-2.0",
     "author": "Matthew Little",
@@ -28,11 +28,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zone117x/node-open-mining-portal.git"
+        "url": "https://github.com/phiten/v-nomp.git"
     },
     "dependencies": {
         "async": "^2.5.0",
-        "bignum": "^0.12.5",
+        "bignum": "0.12.5",
         "body-parser": "^1.17.2",
         "colors": "^1.1.2",
         "compression": "^1.7.0",
@@ -45,7 +45,7 @@
         "nonce": "^1.0.4",
         "redis": "^2.7.1",
         "request": "^2.81.0",
-        "stratum-pool": "git://github.com/krisklosterman/node-stratum-pool.git"
+        "stratum-pool": "git+https://github.com/phiten/node-stratum-pool.git"
     },
     "engines": {
         "node": ">=8.1.4"

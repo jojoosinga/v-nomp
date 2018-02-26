@@ -19,9 +19,9 @@
         "tcpProxyProtocol": false,
         "banning": {
             "enabled": true,
-            "time": 600,
-            "invalidPercent": 50,
-            "checkThreshold": 500,
+            "time": 3600,
+            "invalidPercent": 30,
+            "checkThreshold": 60,
             "purgeInterval": 300
         },
         "redis": {
