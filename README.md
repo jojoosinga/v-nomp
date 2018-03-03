@@ -123,8 +123,8 @@ Usage
 
 
 #### Requirements
-* [Verium Wallet](https://portal.vericoin.info/) v1.1+ ([follow these installation instructions](https://github.com/VeriumReserve/verium)
-* [Node.js](http://nodejs.org/) v9.5 ([follow these installation instructions](https://github.com/creationix/nvm#install-script)
+* [Verium Wallet](https://portal.vericoin.info/) v1.1+ ([follow these installation instructions](https://github.com/VeriumReserve/verium))
+* [Node.js](http://nodejs.org/) v9.5 ([follow these installation instructions](https://github.com/creationix/nvm#install-script))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
 
 ##### Seriously
@@ -140,9 +140,9 @@ you are using - a good place to start with redis is [data persistence](http://re
 Follow the build/install instructions for your coin daemon. Your coin.conf file should end up looking something like this:
 ```
 daemon=1
-rpcuser=litecoinrpc
+rpcuser=veriumrpc
 rpcpassword=securepassword
-rpcport=19332
+rpcport=33987
 ```
 For redundancy, its recommended to have at least two daemon instances running in case one drops out-of-sync or offline,
 all instances will be polled for block/transaction updates and be used for submitting blocks. Creating a backup daemon
@@ -159,7 +159,7 @@ a good pool operator. For starters be sure to read:
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/phiten/vrm-nomp nomp
+git clone https://github.com/phiten/v-nomp nomp
 cd nomp
 npm update
 ```
