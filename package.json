@@ -48,6 +48,6 @@
         "stratum-pool": "git+https://github.com/phiten/node-stratum-pool.git"
     },
     "engines": {
-        "node": ">=8.1.4"
+        "node": ">=9.5"
     }
 }

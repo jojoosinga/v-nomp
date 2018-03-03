@@ -124,7 +124,7 @@ Usage
 
 #### Requirements
 * [Verium Wallet](https://portal.vericoin.info/) v1.1+ ([follow these installation instructions](https://github.com/VeriumReserve/verium))
-* [Node.js](http://nodejs.org/) v9.5 ([follow these installation instructions](https://github.com/creationix/nvm#install-script))
+* [Node.js](http://nodejs.org/) v9.5+ (tested with v9.7.1) ([follow these installation instructions](https://github.com/creationix/nvm#install-script))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
 
 ##### Seriously
