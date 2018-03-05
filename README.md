@@ -161,7 +161,7 @@ Clone the repository and run `npm update` for all the dependencies to be install
 ```bash
 git clone https://github.com/phiten/v-nomp nomp
 cd nomp
-npm update
+npm install
 ```
 
 #### 2) Configuration
