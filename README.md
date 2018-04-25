@@ -107,25 +107,26 @@ Join our subreddit [/r/nomp](http://reddit.com/r/nomp)!
 *Having problems getting the portal running due to some module dependency error?* It's probably because you
 didn't follow the instructions in this README. Please __read the usage instructions__ including [requirements](#requirements) and [downloading/installing](#1-downloading--installing). If you've followed the instructions completely and are still having problems then open an issue here on github or join our #nomp IRC channel and explain your problem :).
 
-If your pool uses NOMP let us know and we will list your website here.
-
-##### Some pools using NOMP or node-stratum-module:
-* http://clevermining.com
-* http://suchpool.pw
-* http://hashfaster.com
-* http://miningpoolhub.com
-* http://kryptochaos.com
-* http://miningpools.tk
-* http://umine.co.uk
-
 Usage
 =====
 
 
 #### Requirements
 * [Verium Wallet](https://portal.vericoin.info/) v1.1+ ([follow these installation instructions](https://github.com/VeriumReserve/verium))
-* [Node.js](http://nodejs.org/) v9.5+ (tested with v9.7.1) ([follow these installation instructions](https://github.com/creationix/nvm#install-script))
+* [Node.js](http://nodejs.org/) v9.5+ (tested with v9.7.1 and v9.8.0) ([follow these installation instructions](https://github.com/creationix/nvm#install-script))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
+
+Alternatively you can install Redis via apt-get:
+
+```bash
+sudo apt-get install redis-server
+```
+
+Other dependencies:
+
+```bash
+sudo apt-get install python build-essential make automake libsodium-dev
+```
 
 ##### Seriously
 Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
