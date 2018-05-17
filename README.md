@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/phiten/v-nomp.svg?branch=master)](https://travis-ci.org/phiten/v-nomp)
+
 # V-NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")
 #### Verium Node Open Mining Portal
 
