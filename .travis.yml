@@ -9,4 +9,4 @@ node_js:
   - '4'
 before_install:
 - sudo apt-get update -qq
-- sudo apt-get install -qq redis-server python build-essential make automake libsodium-dev
+- sudo apt-get install -qq python build-essential make automake
