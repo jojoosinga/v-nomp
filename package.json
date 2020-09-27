@@ -12,9 +12,9 @@
         "verium",
         "scryptn"
     ],
-    "homepage": "https://github.com/phiten/v-nomp",
+    "homepage": "https://github.com/mderasse/v-nomp",
     "bugs": {
-        "url": "https://github.com/phiten/v-nomp/issues"
+        "url": "https://github.com/mderasse/v-nomp/issues"
     },
     "license": "GPL-2.0",
     "author": "Matthew Little",
@@ -28,7 +28,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/phiten/v-nomp.git"
+        "url": "https://github.com/mderasse/v-nomp.git"
     },
     "dependencies": {
         "async": "^2.5.0",
@@ -45,7 +45,7 @@
         "nonce": "^1.0.4",
         "redis": "^2.7.1",
         "request": "^2.81.0",
-        "stratum-pool": "git://github.com/phiten/node-stratum-pool.git"
+        "stratum-pool": "git://github.com/mderasse/node-stratum-pool.git"
     },
     "engines": {
         "node": ">=9.5"

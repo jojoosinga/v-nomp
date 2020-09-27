@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/phiten/v-nomp.svg?branch=master)](https://travis-ci.org/phiten/v-nomp)
+[![Build Status](https://travis-ci.org/mderasse/v-nomp.svg?branch=master)](https://travis-ci.org/mderasse/v-nomp)
 
 # V-NOMP ![NOMP Logo](http://zone117x.github.io/node-open-mining-portal/logo.svg "NOMP Logo")
 #### Verium Node Open Mining Portal
@@ -11,10 +11,10 @@ responsive user-friendly front-end website featuring mining instructions, in-dep
 This is beta software. All of the following are things that can change and break an existing NOMP setup: functionality of any feature, structure of configuration files and structure of redis data. If you use this software in production then *DO NOT* pull new code straight into production usage because it can and often will break your setup and require you to tweak things like config files or redis data.
 
 #### Paid Solution
-Usage of this software requires abilities with sysadmin, database admin, coin daemons, and sometimes a bit of programming. Running a production pool can literally be more work than a full-time job. 
+Usage of this software requires abilities with sysadmin, database admin, coin daemons, and sometimes a bit of programming. Running a production pool can literally be more work than a full-time job.
 
 
-**Coin switching & auto-exchanging for payouts in BTC/LTC** to miners is a feature that very likely will not be included in this project. 
+**Coin switching & auto-exchanging for payouts in BTC/LTC** to miners is a feature that very likely will not be included in this project.
 
 
 #### Table of Contents
@@ -43,7 +43,7 @@ Usage of this software requires abilities with sysadmin, database admin, coin da
 
 ### Features
 
-* For the pool server it uses the highly efficient [node-stratum-pool](//github.com/phiten/node-stratum-pool) module which
+* For the pool server it uses the highly efficient [node-stratum-pool](//github.com/mderasse/node-stratum-pool) module which
 supports vardiff, POW & POS, transaction messages, anti-DDoS, IP banning, [several hashing algorithms](//github.com/zone117x/node-stratum-pool#hashing-algorithms-supported).
 
 * The portal has an [MPOS](//github.com/MPOS/php-mpos) compatibility mode so that the it can
@@ -162,7 +162,7 @@ a good pool operator. For starters be sure to read:
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/phiten/v-nomp nomp
+git clone https://github.com/mderasse/v-nomp nomp
 cd nomp
 npm install
 ```
@@ -178,10 +178,10 @@ Explanation for each field:
     /* Specifies the level of log output verbosity. Anything more severe than the level specified
        will also be logged. */
     "logLevel": "debug", //or "warning", "error"
-    
+
     /* By default NOMP logs to console and gives pretty colors. If you direct that output to a
        log file then disable this feature to avoid nasty characters in your log file. */
-    "logColors": true, 
+    "logColors": true,
 
 
     /* The NOMP CLI (command-line interface) will listen for commands on this port. For example,
@@ -196,30 +196,30 @@ Explanation for each field:
         "enabled": true,
         "forks": "auto"
     },
-    
+
     /* Pool config file will inherit these default values if they are not set. */
     "defaultPoolConfigs": {
-    
+
         /* Poll RPC daemons for new blocks every this many milliseconds. */
         "blockRefreshInterval": 1000,
-        
+
         /* If no new blocks are available for this many seconds update and rebroadcast job. */
         "jobRebroadcastTimeout": 55,
-        
+
         /* Disconnect workers that haven't submitted shares for this many seconds. */
         "connectionTimeout": 600,
-        
+
         /* (For MPOS mode) Store the block hashes for shares that aren't block candidates. */
         "emitInvalidBlockHashes": false,
-        
+
         /* This option will only authenticate miners using an address or mining key. */
         "validateWorkerUsername": true,
-        
+
         /* Enable for client IP addresses to be detected when using a load balancer with TCP
            proxy protocol enabled, such as HAProxy with 'send-proxy' param:
            http://haproxy.1wt.eu/download/1.5/doc/configuration.txt */
         "tcpProxyProtocol": false,
-        
+
         /* If under low-diff share attack we can ban their IP to reduce system/network load. If
            running behind HAProxy be sure to enable 'tcpProxyProtocol', otherwise you'll end up
            banning your own IP address (and therefore all workers). */
@@ -230,7 +230,7 @@ Explanation for each field:
             "checkThreshold": 500, //Perform check when this many shares have been submitted
             "purgeInterval": 300 //Every this many seconds clear out the list of old bans
         },
-        
+
         /* Used for storing share and block submission data and payment processing. */
         "redis": {
             "host": "127.0.0.1",
@@ -462,7 +462,7 @@ Description of options:
            transaction data. Assume its supported but if you have problems try disabling it. */
         "disableTransactions": true
     },
-    
+
     /* Enabled this mode and shares will be inserted into in a MySQL database. You may also want
        to use the "emitInvalidBlockHashes" option below if you require it. The config options
        "redis" and "paymentProcessing" will be ignored/unused if this is enabled. */
@@ -515,10 +515,10 @@ node init.js
 
 ###### Optional enhancements for your awesome new mining pool server setup:
 * Use something like [forever](https://github.com/nodejitsu/forever) to keep the node script running
-in case the master process crashes. 
+in case the master process crashes.
 * Use something like [redis-commander](https://github.com/joeferner/redis-commander) to have a nice GUI
 for exploring your redis database.
-* Use something like [logrotator](http://www.thegeekstuff.com/2010/07/logrotate-examples/) to rotate log 
+* Use something like [logrotator](http://www.thegeekstuff.com/2010/07/logrotate-examples/) to rotate log
 output from NOMP.
 * Use [New Relic](http://newrelic.com/) to monitor your NOMP instance and server performance.
 
