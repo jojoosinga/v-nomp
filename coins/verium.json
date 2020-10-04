@@ -5,6 +5,7 @@
     "reward":"POS",
     "peerMagic": "70352205",
     "peerMagicTestnet": "cdf2c0ef",
+    "hasGetInfo": false,
     "timeTable": {
       "1048576": 100
     }
